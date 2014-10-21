@@ -3,7 +3,7 @@ apt-get update
 apt-get -y upgrade
 
 # install packages
-apt-get install -y mercurial tmux wget zsh
+apt-get install -y build-essential mercurial tmux wget zsh
 
 # go
 wget http://golang.org/dl/go1.3.linux-amd64.tar.gz -P /tmp
