@@ -3,12 +3,12 @@ apt-get update
 apt-get -y upgrade
 
 # install packages
-apt-get install -y git build-essential mercurial tmux wget zsh
+apt-get install -y build-essential mercurial tmux wget zsh
 
 # go
-wget https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz -P /tmp
-tar -C /usr/local -xzf /tmp/go1.4.2.linux-amd64.tar.gz
-rm -f /tmp/go1.4.2.linux-amd64.tar.gz
+wget https://storage.googleapis.com/golang/go1.5.2.linux-amd64.tar.gz -P /tmp
+tar -C /usr/local -xzf /tmp/go1.5.2.linux-amd64.tar.gz
+rm -f /tmp/go1.5.2.linux-amd64.tar.gz
 export GOPATH=$HOME/.ghq
 export PATH=$PATH:/usr/local/go/bin
 go get github.com/motemen/ghq
